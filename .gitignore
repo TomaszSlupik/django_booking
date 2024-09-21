@@ -1,0 +1,8 @@
+venv
+booking/settings.py
+booking/__pycache__
+managment/__pycache__
+managment/migrations
+house/__pycache__
+house/migrations
+

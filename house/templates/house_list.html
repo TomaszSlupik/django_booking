@@ -1,0 +1,13 @@
+<h1>Lista domkow</h1>
+<ul> 
+    <!-- Iterate over object_list -->
+    {% for object in object_list %} 
+    <!-- Display Objects -->
+    <li>{{ object.title }}</li> 
+   
+    <hr/> 
+    <!-- If object_list is empty  -->
+    {% empty %} 
+    <li>Nie ma domkow</li> 
+    {% endfor %} 
+</ul>
