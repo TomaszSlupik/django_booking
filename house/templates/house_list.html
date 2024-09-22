@@ -1,13 +1,12 @@
 <h1>Lista domkow</h1>
-<ul> 
-    <!-- Iterate over object_list -->
-    {% for object in object_list %} 
-    <!-- Display Objects -->
-    <li>{{ object.title }}</li> 
-   
-    <hr/> 
-    <!-- If object_list is empty  -->
-    {% empty %} 
-    <li>Nie ma domkow</li> 
-    {% endfor %} 
+<ul>
+    {% for object in object_list %}
+    <li>{{ object.title }} <form action="{% url 'house-detail' object.id %}"><input type="submit" value="Szczegoly" />
+        </form>
+    </li>
+
+    <hr />
+    {% empty %}
+    <li>Nie ma domkow</li>
+    {% endfor %}
 </ul>
